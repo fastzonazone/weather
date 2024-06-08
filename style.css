@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #83a4d4, #b6fbff);
+}
+
+#app {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+#result {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#emoji {
+    font-size: 4em;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+#emoji.yes {
+    color: green;
+}
+
+#emoji.no {
+    color: red;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+#emoji.bounce {
+    animation: bounce 1s infinite;
+}
+
+#details {
+    font-size: 1.2em;
+    color: #555;
+    text-align: left;
+}
+
+#details p {
+    margin: 5px 0;
+}
